@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Swal from "sweetalert2";
 
-function Add({ employees, setEmployees, setIsAdding }) {
+function Add({ students, setStudents, setIsAdding }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -25,16 +25,16 @@ function Add({ employees, setEmployees, setIsAdding }) {
       });
     }
 
-    const id = employees.length + 1;
-    const newEmployee = {
+    const id = students.length + 1;
+    const newStudent = {
       id,
       firstName,
       lastName,
       email,
       date,
     };
-    employees.push(newEmployee);
-    setEmployees(employees);
+    students.push(newStudent);
+    setStudents(students);
     setIsAdding(false);
 
     Swal.fire({
@@ -121,7 +121,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
             <div style={{ marginTop: "30px" }} className="flex flex-row">
               <input
                 type="submit"
-                value="Update"
+                value="Add"
                 className="px-8 py-3 font-semibold rounded bg-red-800 text-gray-100"
               />
               <input
