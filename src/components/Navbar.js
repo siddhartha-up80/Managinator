@@ -11,34 +11,31 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 
-
-
-
+import Logo from "./student.png";
 
 const pages = ["Profiles"];
-
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
- 
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
- 
   return (
     <AppBar position="static">
       <Container maxWidth="xl" className="bg-red-800">
         <Toolbar disableGutters className="">
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <img
+            src={Logo}
+            alt="Logo"
+            className="w-8 sm:block hidden bg-white rounded-full sm:mr-5"
+          ></img>
           <Typography
             variant="h6"
             noWrap
@@ -94,7 +91,11 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <img
+            alt="Logo"
+            src={Logo}
+            className="sm:w-8 w-6 sm:hidden block mr-3 bg-white rounded-full sm:mr-5"
+          ></img>
           <Typography
             variant="h7"
             noWrap
@@ -124,8 +125,6 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
-
-          
         </Toolbar>
       </Container>
     </AppBar>
