@@ -68,7 +68,7 @@ const Table = ({ setIsAdding, students, handleEdit, handleDelete }) => {
                 ))
               ) : (
                 <tr>
-                  <td>No Information</td>
+                  <td>No Informatarttion</td>
                 </tr>
               )}
             </tbody>

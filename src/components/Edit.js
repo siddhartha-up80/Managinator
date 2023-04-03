@@ -62,15 +62,13 @@ function Edit({ students, selectedStudent, setStudents, setIsEditing }) {
               <div className="space-y-2 col-span-full lg:col-span-1 text-xl">
                 <p className="font-medium">Student Profile Information</p>
                 <p className="text-base">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Adipisci fuga autem eum!
+                  Edit student information individually to the following spaces
                 </p>
               </div>
               <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
                 <div className="col-span-full sm:col-span-3">
                   <label htmlFor="firstname" className="text-sm">
                     First name
-
                   </label>
                   {/* ref={textInput} */}
                   <input
@@ -122,23 +120,22 @@ function Edit({ students, selectedStudent, setStudents, setIsEditing }) {
                     className="w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-pink-600 border-gray-300 text-gray-900"
                   />
                 </div>
-
-                
               </div>
 
-
-
-
               <div style={{ marginTop: "30px" }} className="flex flex-row">
-                  <input type="submit" value="Update"  className="px-8 py-3 font-semibold rounded bg-red-800 text-gray-100"/>
-                  <input
-                    style={{ marginLeft: "12px" }}
-                    className="px-8 py-3 font-semibold rounded bg-red-400 text-gray-100"
-                    type="button"
-                    value="Cancel"
-                    onClick={() => setIsEditing(false)}
-                  />
-                </div>
+                <input
+                  type="submit"
+                  value="Update"
+                  className="px-8 py-3 font-semibold rounded bg-red-800 text-gray-100"
+                />
+                <input
+                  style={{ marginLeft: "12px" }}
+                  className="px-8 py-3 font-semibold rounded bg-red-400 text-gray-100"
+                  type="button"
+                  value="Cancel"
+                  onClick={() => setIsEditing(false)}
+                />
+              </div>
             </fieldset>
           </form>
         </section>

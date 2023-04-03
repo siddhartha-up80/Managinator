@@ -57,8 +57,7 @@ function Add({ students, setStudents, setIsAdding }) {
             <div className="space-y-2 col-span-full lg:col-span-1 text-xl">
               <p className="font-medium">Student Profile Information</p>
               <p className="text-base">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci fuga autem eum!
+                Add student information individually to the following spaces
               </p>
             </div>
             <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
